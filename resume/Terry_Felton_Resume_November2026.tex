@@ -1,0 +1,93 @@
+% Updated from the archived October 2026 LaTeX source; keep this file authoritative.
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.48in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfauthor={Terry S. Felton III},pdftitle={Terry Felton - Senior Platform Engineer},pdfsubject={Professional resume}}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\definecolor{accent}{HTML}{333333}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\pagenumbering{gobble}
+\titleformat{\section}{\normalsize\bfseries\color{accent}}{}{0em}{}[\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=1.15em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+
+\begin{document}
+\fontsize{9.2}{10.5}\selectfont
+\begin{center}
+{\LARGE \textbf{Terry S. Felton III} \normalsize (Romme)}\\[-1pt]
+\href{mailto:terrysfelton@gmail.com}{terrysfelton@gmail.com} \,|\, +1 504-509-8620 \,|\,
+\href{https://rommethebuilder.com}{rommethebuilder.com}\\
+\href{https://github.com/rommethecoder}{github.com/rommethecoder} \,|\,
+\href{https://www.linkedin.com/in/terry-felton-b65685175/}{linkedin.com/in/terry-felton-b65685175}
+\end{center}
+\vspace{-3pt}
+\begin{center}
+{\normalsize\bfseries Senior Platform Engineer \enspace|\enspace Internal PaaS, Cloud \& AI Platforms}
+\end{center}
+\vspace{-3pt}
+
+Senior Platform Engineer who builds and operates internal developer platforms, cloud infrastructure, and AI delivery systems. Combines hands-on software engineering with architecture and product ownership to turn application ideas into secure, repeatable production releases across OCI, Kubernetes, GitLab CI/CD, and Oracle.
+
+\section*{Experience}
+\textbf{JPI} \hfill Coppell, TX\\[-1pt]
+\textit{Senior Platform Engineer} \hfill Aug 2026 -- Present
+\begin{itemize}
+  \item Develop and maintain an internal PaaS on OCI Kubernetes Engine, unifying application hosting, onboarding, identity, routing, and development-to-production delivery.
+  \item Delivered a five-service production platform combining a React portal, Nginx reverse proxy, centralized SSO, REST APIs, and an Oracle-backed registry through coordinated GitLab and Liquibase releases.
+  \item Built a reusable Python JWT/JWKS verification SDK and integrated central SSO and roles across three RAG services, removing duplicate sign-ins and standardizing authorization.
+  \item Administer Oracle Autonomous Databases in dev and prod; provision schemas and least-privilege grants, publish ORDS APIs, manage Liquibase migrations, and build audit logging and usage dashboards.
+  \item Standardize CI/CD security checks, namespace isolation, runtime secrets, release validation, and rollback controls; lead architecture, onboarding, reusable templates, training, and AI-assisted workflows.
+\end{itemize}
+
+\textit{Data \& Application Developer} \hfill May 2025 -- Aug 2026
+\begin{itemize}
+  \item Consolidated application hosting onto two shared OKE load balancers and retired 15 legacy per-application load balancers; introduced a central proxy to overcome cloud routing-capacity limits.
+  \item Led modernization as Project Manager and Product Owner, defining architecture, roadmaps, sprint priorities, acceptance criteria, and executive reporting; migrated web, API, and RAG/LLM workloads to shared OKE.
+  \item Integrated Liquibase Secure into Oracle release workflows with policy checks, dry-run reports, rollback testing, and production approval gates; developed Oracle/APEX applications, REST integrations, and Workato automations.
+\end{itemize}
+
+\textbf{Perficient / Charles Schwab} \hfill Lafayette, LA\\[-1pt]
+\textit{Associate Technical Consultant / Full Stack .NET Developer} \hfill Jul 2024 -- Jan 2025
+\begin{itemize}
+  \item Contributed to enterprise modernization from a legacy application to Angular and .NET/C\#; built reusable components and accessible UI enhancements, including JAWS support and data-table navigation.
+  \item Diagnosed frontend and backend issues and coordinated production-ready changes with designers, engineers, and stakeholders in an Agile release environment.
+\end{itemize}
+
+\textbf{Acadian Ambulance} \hfill Lafayette, LA\\[-1pt]
+\textit{Application Developer} \hfill Nov 2022 -- Jul 2024
+\begin{itemize}
+  \item Built and maintained internal applications with Blazor/Razor, .NET, React, JavaScript/TypeScript, and MSSQL; refactored legacy features for performance, maintainability, and long-term support.
+  \item Delivered features across concurrent applications, defined specifications with IT stakeholders, and supported TeamCity/Octopus Deploy releases and production issue diagnosis.
+\end{itemize}
+\textit{Computer Technician} \hfill Jan 2022 -- Nov 2022
+\begin{itemize}
+  \item Diagnosed hardware and software issues, supported employees, and coordinated secure cross-team technical resolutions.
+\end{itemize}
+
+\section*{Selected Personal Applications}
+\textbf{Garage \& Trip Ledger} \hfill Nov 2026\\[-1pt]
+\textit{Private dashboards and authenticated ChatGPT MCP connectors}
+\begin{itemize}
+  \item Built and deployed vehicle-maintenance and trip-expense applications on Cloudflare Workers and D1/SQLite with Google sign-in, verified Access JWTs, and owner-scoped records; Garage supports explicit platform-admin garage selection.
+  \item Integrated private Streamable HTTP MCP connectors with managed OAuth, schema-validated tools, duplicate-safe creation, and tests for authentication and cross-user isolation.
+  \item Migrated spreadsheet history with source provenance and reconciled costs; Trip Ledger uses integer-hundredths accounting and distinguishes pending expenses, received reimbursements, and planned costs.
+\end{itemize}
+
+\section*{Skills}
+\textbf{Languages \& applications:} Python, TypeScript, JavaScript, C\#, SQL/PLSQL, React, Angular, .NET/Blazor, FastAPI\\
+\textbf{Cloud \& delivery:} OCI, OKE/Kubernetes, Docker, Nginx, OpenTofu, GitLab CI/CD, Liquibase Secure, Workato, Cloudflare Workers\\
+\textbf{Identity, AI \& data:} Entra ID, OAuth/OIDC, JWT/JWKS, RBAC, RAG/LLM workloads, AI agents, Claude Code, MCP, Oracle DBA/ATP/ORDS, MSSQL, D1/SQLite
+
+\section*{Education \& Certifications}
+\textbf{Bachelor of Computer Science}, University of Louisiana at Lafayette \hfill Dec 2023\\
+GitLab Fundamentals Associate \enspace|\enspace GitLab Certified CI/CD Associate \enspace|\enspace CompTIA IT Fundamentals+ \enspace|\enspace Adobe Certified Associate
+\end{document}

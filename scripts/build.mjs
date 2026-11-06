@@ -7,7 +7,7 @@ const output = resolve(root, 'dist');
 // Publish only the files used by the public portfolio.
 const files = [
   'index.html',
-  'favicon.png',
+  'favicon.svg',
   'css/portfolio.css',
   'js/portfolio.js',
   'fonts/poppins/poppins-regular-webfont.woff2',

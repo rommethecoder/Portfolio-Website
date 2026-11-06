@@ -1,0 +1,15 @@
+import {execFileSync} from 'node:child_process';
+import {mkdir,copyFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const name='Terry_Felton_Resume_November2026';
+const output=root+'resume/build';
+await mkdir(output,{recursive:true});
+execFileSync(process.env.TECTONIC_BIN||'tectonic',['--keep-logs','--outdir',output,root+'resume/'+name+'.tex'],{stdio:'inherit'});
+const pdf=output+'/'+name+'.pdf';
+const info=execFileSync('pdfinfo',[pdf],{encoding:'utf8'});
+if(!/^Pages:\s+1\s*$/m.test(info))throw new Error('Resume must remain one page. Inspect the compiled PDF before publishing.');
+const text=execFileSync('pdftotext',[pdf,'-'],{encoding:'utf8'});
+for(const required of ['Terry','Senior Platform Engineer','Garage','Trip Ledger','Education'])if(!text.includes(required))throw new Error('Missing resume text: '+required);
+await copyFile(pdf,root+'files/'+name+'.pdf');
+console.log('Verified a one-page LaTeX PDF and updated files/'+name+'.pdf');
