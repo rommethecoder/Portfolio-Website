@@ -26,7 +26,7 @@ npm run dev
 
 Cloudflare Worker: `portfolio-website`. Default/production branch: `portfolio-redesign`. Build: `npm run build`; deploy: `npx wrangler deploy`. Pushing this branch triggers the existing Cloudflare build integration.
 
-The legacy `master` branch is retained in history; GitHub Pages still serves that historical branch separately. The custom domain uses Cloudflare. Repository renaming remains deferred.
+The legacy `master` branch is retained; its GitHub Pages entry now redirects visitors to the current custom domain on Cloudflare. Repository renaming remains deferred.
 
 ## Source map
 

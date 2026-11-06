@@ -15,6 +15,6 @@ npm run build
 
 If Tectonic is outside PATH, set `TECTONIC_BIN` to its absolute path. `npm run resume` compiles into ignored `resume/build/`, verifies a one-page PDF and expected extractable text, then replaces the published PDF under `files/`. Compilation or validation failure leaves the previously published PDF intact. Inspect the rendered PDF after content/layout edits; the text/page checks cannot establish visual quality or full PDF accessibility.
 
-The public website build copies the PDF but does not compile LaTeX in Cloudflare. Commit source and compiled PDF together. Update the existing November PDF in Google Drive in place, preserve archived originals, and upload/update its `.tex` beside it. The Drive copies are manually maintained.
+The public website build copies the PDF but does not compile LaTeX in Cloudflare. Commit source and compiled PDF together. The current Drive edition is named `Terry_Felton_Resume_November2026_LaTeX.pdf`, with its `.tex` beside it in Resumes. Update that LaTeX edition/source in place and preserve archived originals. The earlier November PDF was retained because this connector lacked write access to replace it. The Drive copies are manually maintained.
 
 This PDF uses a traditional single-column text layout. Extractable text and links have been checked; full tagged-PDF accessibility has not been implemented.
