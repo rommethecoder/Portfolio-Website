@@ -10,6 +10,8 @@ const files = [
   'favicon.svg',
   'css/portfolio.css',
   'js/portfolio.js',
+  'fonts/space-grotesk/SpaceGrotesk.ttf',
+  'fonts/space-grotesk/OFL.txt',
   'fonts/poppins/poppins-regular-webfont.woff2',
   'fonts/poppins/poppins-semibold-webfont.woff2',
   'files/Terry_Felton_Resume_October2026.pdf',
