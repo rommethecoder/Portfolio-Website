@@ -43,3 +43,7 @@ The earlier portfolio used the KARDS template from [Styleshout](https://www.styl
 ## Resume authoring
 
 The current resume is authored in LaTeX, adapted from the archived October 2026 source. Run `npm run resume` with Tectonic and Poppler (`pdfinfo`/`pdftotext`) installed, then `npm run build` to include the verified PDF in the deployment. See [resume/README.md](resume/README.md). The earlier HTML-to-PDF source is superseded; do not recreate it.
+
+## Public tools and contributions
+
+The portfolio links to four independently licensed public projects: [Private MCP Starter](https://github.com/rommethecoder/private-mcp-starter), [Desktop Toolkit](https://github.com/rommethecoder/desktop-toolkit), [Romme Glass Panel](https://github.com/rommethecoder/romme-glass-panel), and [Echo Desk Dashboard](https://github.com/rommethecoder/echo-desk-dashboard). Their READMEs and changelogs distinguish automated checks from pending device/account verification. Upstream PR links carry their actual open/draft status; update that wording when maintainers act.
