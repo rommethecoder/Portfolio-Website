@@ -13,6 +13,7 @@ const files = [
   'fonts/poppins/poppins-regular-webfont.woff2',
   'fonts/poppins/poppins-semibold-webfont.woff2',
   'files/Terry_Felton_Resume_October2026.pdf',
+  'files/Terry_Felton_Resume_November2026.pdf',
 ];
 // Check inputs before clearing any prior build.
 for (const file of files) await stat(resolve(root, file));
