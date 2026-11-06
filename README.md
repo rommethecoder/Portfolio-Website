@@ -47,3 +47,11 @@ The current resume is authored in LaTeX, adapted from the archived October 2026 
 ## Public tools and contributions
 
 The portfolio links to four independently licensed public projects: [Private MCP Starter](https://github.com/rommethecoder/private-mcp-starter), [Desktop Toolkit](https://github.com/rommethecoder/desktop-toolkit), [Romme Glass Panel](https://github.com/rommethecoder/romme-glass-panel), and [Echo Desk Dashboard](https://github.com/rommethecoder/echo-desk-dashboard). Their READMEs and changelogs distinguish automated checks from pending device/account verification. Upstream PR links carry their actual open/draft status; update that wording when maintainers act.
+
+## Foundry design
+
+The current site uses the approved Foundry direction: a work map centered on the Romme mark, a scroll-linked engineering sequence, an app showcase, and direct copy describing actual work. No slogans or simulated financial/vehicle records are presented as personal data. Phone images are explicitly illustrative.
+
+Space Grotesk is served locally under the SIL Open Font License in `fonts/space-grotesk/OFL.txt`. The existing Poppins license remains alongside its retained assets. The default is motion enabled unless the system requests reduced motion; the header toggle can pause animation. On phones or with motion off, the engineering chapters use direct buttons instead of a long pinned scroll. Content and the resume remain available without JavaScript.
+
+`js/portfolio.js` owns motion, reading progress, and the two app-showcase tabs. `index.html` contains the actual page content and static templates; app buttons link to the protected services. The authoritative resume remains LaTeX, and this visual release does not alter its content.
