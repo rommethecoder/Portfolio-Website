@@ -77,6 +77,7 @@
   }
   function configureMotion() {
     document.body.classList.toggle("motion-off", !motion);
+    document.documentElement.style.scrollBehavior = motion ? "" : "auto";
     toggle.setAttribute("aria-pressed", String(motion));
     toggle.textContent = motion ? "Motion on" : "Motion off";
     observer?.disconnect();

@@ -3000,3 +3000,27 @@ form > .button {
     font-size: 22px;
   }
 }
+
+/* Start continuous effects only when the script can offer a working pause control. */
+.network-signal,
+.diagram-trace,
+.entrance,
+.demo-device {
+  animation: none;
+}
+.js-motion body:not(.motion-off) .network-signal {
+  animation: trace 10s linear infinite;
+}
+.js-motion body:not(.motion-off) .diagram-trace {
+  animation: trace 13s linear infinite;
+}
+.js-motion body:not(.motion-off) .entrance {
+  animation: enter 1s both;
+}
+.js-motion body:not(.motion-off) .demo-device {
+  animation: device-enter 0.7s both;
+}
+.motion-off .reveal {
+  opacity: 1;
+  transform: none;
+}
